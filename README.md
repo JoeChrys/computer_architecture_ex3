@@ -3,7 +3,7 @@
 ## Step 1
 
 #### 1.
-Dynamic power is the power used for gate operations of the transistors, which the cpu consists of. Hence it is proportional to the gate operations (more gate operations → more power).
+Dynamic power is the power used for gate operations of the transistors, which the cpu consists of. Hence it is proportional to the gate operations (more gate operations -> more power).
 
 Leakage is an unwanted loss of energy. This mainly happens because electronic charges dissipate over time and currents flow where they are not supposed to.
 
