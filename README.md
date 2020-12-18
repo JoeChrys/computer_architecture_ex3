@@ -36,7 +36,8 @@ If we want to calculate the battery life from the McPAT output, it should give u
 
 Since the two systems will not turn off after the completion of the program, even if the arm cpu would run only on its peak power(1.74W) and the xeon cpu on its leakage power(36.8W), the xeon cpu would have no chance on consuming less energy over time. The difference only increases when we factor in the 134.9W of peak power for the xeon.
 
-## Step 2 EDP, Possible Errors, Combining 2 simulators
+## Step 2
+## EDP, Possible Errors, Combining 2 simulators
 
 Power-Delay Product (PDP) and Energy-Delay Product (EDP) are two figures of merit which are used to assess power and energy efficiency relatively to performance. In the case of this exercise, in our MinorCPU model we examined Runtime Dynamic, Subthreshold Leakage and Gate Leakage as the power used by each component in every stage of its cycle. Τhe compoments used are the Core (single processor model), which includes L1 caches and L2 cache since they take up most of the area of the modeled chip.
 
