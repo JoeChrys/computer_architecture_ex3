@@ -1,4 +1,11 @@
-# computer_architecture_ex3
+# Computer Architecture
+
+## Lab 3
+18/12/2020\
+Ilia Zarka 9289\
+Iosif Chrysostomou 9130
+
+---
 
 ## Step 1
 
