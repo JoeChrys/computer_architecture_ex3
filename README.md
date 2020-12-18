@@ -22,8 +22,8 @@ The output of McPAT gives us only the peak power of the cpu. To calculate the li
 To answer this question we had to make some assumptions:
 * The battery has no internal resistance
 * The battery can handle the current
-* The leakage power of the cpu(s) is the same in every case
-* The cpus are given the same tasks and they can both finish them before the battery is dead
+* The leakage power of the CPU is the same in every case
+* The CPUs are given the same tasks and they can both finish them before the battery is dead
 
 So if a CPU that consumes 10 times more peak power than another, it can require less energy to complete a task if it completes it in less than 1/10 of the time of the other one.
 
@@ -45,3 +45,9 @@ Power-Delay Product (PDP) and Energy-Delay Product (EDP) are two figures of meri
 * EDP was calculated by this formula: `EDP = (coreRtDyn + coreSubLeakage + coreGateLeakage + L2RtDyn + L2SubLeakage + L2GateLeakage) * Runtime^2` or simply `PDP * Rutime`
 
 **Power** values where extracted from the output of McPAT tool and **time** value (Runtime) was extracted from gem5 stats output.
+
+Both EDP and PDP where calculated for every parameter case that was simulated during [Lab 2](https://github.com/JoeChrys/computer_architecture_ex2)
+
+![EDP](./images/edp.png)
+
+PDP results can be viewed here: [PDP](./images/pdp.png)
