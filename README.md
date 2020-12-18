@@ -51,7 +51,7 @@ Both EDP and PDP where calculated for every parameter case that was simulated du
 
 ![EDP](./images/edp.png)
 
-PDP results can be viewed here: [PDP](./images/pdp.png)
+PDP results can be viewed here: [PDP values for each parameter](./images/pdp.png)
 
 #### Possible Inaccuracies in results
 
