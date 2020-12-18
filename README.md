@@ -53,10 +53,13 @@ Both EDP and PDP where calculated for every parameter case that was simulated du
 
 PDP results can be viewed here: [PDP](./images/pdp.png)
 
+#### Possible Inaccuracies in results
+
+The produced results could vary when applied in silicon. Firstly, the software doesn't have a complete image of the CPU at any given time, instead its results occur on stats based on the execution of a program. Secondly, different lithography technologies could have different power consumption values for the same transistor size.
+
 #### Possible Errors introduced by combining 2 simulators
 
 In our results we used 2 different software, gem5 and McPAT to extract data for power consumtion. Gem5 uses a model (in this case MinorCPU) to simulate the behaviour of a CPU. McPAT uses a template to model the power values of a CPU based on the parameters it is given. The parameters given to McPAT are extracted from the output of gem5. To summarize, the final result can be affected by the following error sources:
 
 * Inaccuracies of gem5's model
 * Inaccuracies in McPAT's calculations since it cannot have a complete image of the powerflow in the chip
-* Inaccuracies in power consumtion between different lithography technologies 
