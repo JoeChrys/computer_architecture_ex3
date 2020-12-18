@@ -37,7 +37,8 @@ If we want to calculate the battery life from the McPAT output, it should give u
 Since the two systems will not turn off after the completion of the program, even if the arm cpu would run only on its peak power(1.74W) and the xeon cpu on its leakage power(36.8W), the xeon cpu would have no chance on consuming less energy over time. The difference only increases when we factor in the 134.9W of peak power for the xeon.
 
 ## Step 2
-## EDP, Possible Errors, Combining 2 simulators
+
+#### EDP and PDP
 
 Power-Delay Product (PDP) and Energy-Delay Product (EDP) are two figures of merit which are used to assess power and energy efficiency relatively to performance. In the case of this exercise, in our MinorCPU model we examined Runtime Dynamic, Subthreshold Leakage and Gate Leakage as the power used by each component in every stage of its cycle. Τhe compoments used are the Core (single processor model), which includes L1 caches and L2 cache since they take up most of the area of the modeled chip.
 
@@ -51,3 +52,11 @@ Both EDP and PDP where calculated for every parameter case that was simulated du
 ![EDP](./images/edp.png)
 
 PDP results can be viewed here: [PDP](./images/pdp.png)
+
+#### Possible Errors introduced by combining 2 simulators
+
+In our results we used 2 different software, gem5 and McPAT to extract data for power consumtion. Gem5 uses a model (in this case MinorCPU) to simulate the behaviour of a CPU. McPAT uses a template to model the power values of a CPU based on the parameters it is given. The parameters given to McPAT are extracted from the output of gem5. To summarize, the final result can be affected by the following error sources:
+
+* Inaccuracies of gem5's model
+* Inaccuracies in McPAT's calculations since it cannot have a complete image of the powerflow in the chip
+* Inaccuracies in power consumtion between different lithography technologies 
