@@ -63,10 +63,12 @@ In our results we used 2 different software, gem5 and McPAT to extract data for 
 
 * Inaccuracies of gem5's model
 * Inaccuracies in McPAT's calculations since it cannot have a complete image of the powerflow in the chip
-
+---
 ## Feedback
 Overall, we really enjoyed learning yet another tool for simulating computer architectures and it was really satisfying seeing them confirm the theory from the lectures. One complaint we had from the second and third lab exercise is the fact that it was repetitive, and we feel like we learned more about linux and programing than we did about computer architecture. We did like that but if the labs purpose is to learn more about architecture, we feel like we should be given more ready made scripts to save some time and emphasize more on the research component.
-
+---
 ## Sources
-* http://hyperphysics.phy-astr.gsu.edu/hbase/electric/capeng.html
-* https://electronics.stackexchange.com/questions/101988/dynamic-energy-and-dynamic-power-in-microprocessors
+* [Proseccor Power Dissipation](https://en.wikipedia.org/wiki/Processor_power_dissipation)
+* [Capacitor Energy-Charge](http://hyperphysics.phy-astr.gsu.edu/hbase/electric/capeng.html)
+* [Calculating Dynamic Power](https://electronics.stackexchange.com/questions/101988/dynamic-energy-and-dynamic-power-in-microprocessors)
+
