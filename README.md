@@ -10,7 +10,7 @@ Iosif Chrysostomou 9130
 ## Step 1
 
 #### 1. Dynamic Power and Leakage
-Dynamic power is the power used for gate operations of the transistors, which the CPU consists of. Hence it is proportional to the gate operations (more gate operations -> more power).
+Dynamic power is the power used for gate operations of the transistors, which the CPU consists of. Hence it is proportional to the gate operations (more gate operations -> more power). The energy used to charge one gate equals to **C** * **V² / 2** Joules. This energy though, will be consumed from the power supply only when charging the gate. When discharging it, the energy stored will just turn into heat in the transistor network used for this job. So, assuming the transistor is being used at every clock cycle, the energy used I a second will be (**C** * **V² / 2**) * **f** Watts, where **f** is the frequency of the clock. In this equation we can see one of the reasons why we are trying so hard to shrink down the transistor sizes. Doing so, reduces the gate capacitance, resulting in lower power consumption.
 
 Leakage is an unavoidable loss of energy. This mainly happens because electric charges dissipate over time and currents flow through the gate or through the subthreshold.
 
